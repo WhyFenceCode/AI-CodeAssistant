@@ -10,7 +10,7 @@
 body,h1 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 .bgimg {
-  background-image: url('https://i.ibb.co/48W8KZ8/Fam-VRz-L6zk-Q3n-Lgp7bm-H-1-cr3n9-15-625x.jpg');
+  background-image: url('https://i.ibb.co/n6grcLS/skjb-Kc2-GTb-Yg-Br-WAk6-Ja-6-0utoz-15-625x.jpg');
   min-height: 100%;
   background-position: center;
   background-size: cover;
@@ -19,8 +19,13 @@ body, html {height: 100%}
 
 <script type="text/javascript">
   function daysLeft(){
-           document.getElementById("dayLeft").innerHTML = "34 days left";
-         }
+    const currentDate = new Date();
+    const futureDate = new Date('2023-12-31');
+    const timeDifference = futureDate.getTime() - currentDate.getTime();
+    const daysDifference = Math.ceil(timeDifference / (1000 * 3600 * 24));
+    console.log(`The number of days between ${currentDate} and ${futureDate} is ${daysDifference}`);
+    document.getElementById("dayLeft").innerHTML = `${daysDifference} days left`;
+   }
 
 </script>
 
@@ -28,7 +33,7 @@ body, html {height: 100%}
 <body onload="daysLeft()">
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
   <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Logo
+    WhyFencePost Art
   </div>
   <div class="w3-display-middle">
     <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
