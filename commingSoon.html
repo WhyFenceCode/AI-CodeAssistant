@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>WhyFencePost AI Art</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -10,15 +10,22 @@
 body,h1 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 .bgimg {
-  background-image: url('/Assets/Photos/uDOoBtep_4x.jpg');
+  background-image: url('https://i.ibb.co/48W8KZ8/Fam-VRz-L6zk-Q3n-Lgp7bm-H-1-cr3n9-15-625x.jpg');
   min-height: 100%;
   background-position: center;
   background-size: cover;
 }
 </style>
-</head>
-<body>
 
+<script type="text/javascript">
+  function daysLeft(){
+           document.getElementById("dayLeft").innerHTML = "34 days left";
+         }
+
+</script>
+
+</head>
+<body onload="daysLeft()">
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
   <div class="w3-display-topleft w3-padding-large w3-xlarge">
     Logo
@@ -26,7 +33,7 @@ body, html {height: 100%}
   <div class="w3-display-middle">
     <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
     <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">35 days left</p>
+    <p class="w3-large w3-center" id="dayLeft"></p>
   </div>
 </div>
 
