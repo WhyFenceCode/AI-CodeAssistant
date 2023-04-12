@@ -40,6 +40,7 @@ img {margin-bottom: -7px}
     const timeDifference = futureDate.getTime() - currentDate.getTime();
     const daysDifference = Math.ceil(timeDifference / (1000 * 3600 * 24));
     if (daysDifference > 0) {
+      console.log(`The number of days between ${currentDate} and ${futureDate} is ${daysDifference}`);
       window.location.replace("https://whyfencecode.github.io/PhotoSite/commingSoon.html");
     }
 
