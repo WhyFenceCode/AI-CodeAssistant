@@ -42,13 +42,19 @@ img {margin-bottom: -7px}
 </style>
 <script type="text/javascript">
   function reroute(){
-    window.location.replace("file:///C:/Users/whyfe/OneDrive/Desktop/Coding/AI-CodeAssistant/commingSoon.html");
-   }
+    const futureDate = new Date('2023-4-20');
+    const timeDifference = futureDate.getTime() - currentDate.getTime();
+    const daysDifference = Math.ceil(timeDifference / (1000 * 3600 * 24));
+    if (daysDifference > 0) {
+      window.location.replace("https://whyfencecode.github.io/PhotoSite/commingSoon.html");
+    }
+
+  }
 
 </script>
 </head>
 <!-- <body onload='reroute()'> -->
-<body>
+<body onload='reroute()'>
 
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
